@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Self-Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Professional Self-Assessment</h1>
+        <p>Showcasing Strengths and Preparing for the Computer Science Field</p>
+    </header>
+
+    <div id="video-review">
+        <h2>Code Review Videos</h2>
+        <a href="https://studio.youtube.com/video/lsCOOoaRfek/edit" target="_blank">Code Review Video 1</a><br>
+        <a href="https://studio.youtube.com/video/LJGcuvCa4Tk/edit" target="_blank">Code Review Video 2</a><br>
+        <a href="https://studio.youtube.com/video/Umqkcs0Gyps/edit" target="_blank">Code Review Video 3</a><br>
+        <a href="https://studio.youtube.com/video/OP8JVvuf6j4/edit" target="_blank">Code Review Video 4</a>
+    </div>
+
+    <div id="content">
+        <div class="column">
+            <h2>Original Projects</h2>
+            <br>
+            <br>
+            <br>
+            <div class="project">
+                <img src="weight.png" alt="WeightTracker Original">
+                <a href="#" target="_blank">WeightTracker (Original)</a>
+                <p>A user-friendly application for tracking weight, focusing on user experience.</p>
+                <a href="https://github.com/Brody-Robinson/MyWeightTracker-Original" target="_blank" class="btn">View Project</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="project">
+                <img src="logo.png" alt="Travlrs Getaway Original">
+                <a href="#" target="_blank">Travlrs Getaway (Original)</a>
+                <p>A travel planning tool that implements the Dijkstra Algorithm for route optimization.</p>
+                <a href="https://github.com/Brody-Robinson/travlr-original" target="_blank" class="btn">View Project</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="project">
+                <img src="keys.png" alt="3D Project Original">
+                <a href="#" target="_blank">3D Project (Original)</a>
+                <p>An interactive 3D visualization project focused on rendering complex scenes.</p>
+                <a href="https://github.com/Brody-Robinson/3D-Objects-Original-" target="_blank" class="btn">View Project</a>
+            </div>
+
+        </div>
+
+        <div class="column narrative">
+            <h2>Narrative for Changes</h2>
+
+            <h3>WeightTracker Project</h3>
+            <p><strong>Artifact Description:</strong> The WeightTracker application, developed in Android Studio, allows users to record their weight daily, store their data, sign in, manage their profile, and receive notifications upon reaching their goal
+                weight. The initial version was created in 2023, with significant improvements to the SQLite database schema implemented in July 2024.</p>
+            <p><strong>Justification for Inclusion in ePortfolio:</strong> This artifact was selected because it demonstrates practical application of database management, user interface design, and notification handling in Android development. It showcases
+                the ability to build a functional app with a focus on user experience and data integrity.</p>
+            <p><strong>Specific Components Showcasing Skills:</strong></p>
+            <ul>
+                <li>Database Management: The addition of foreign key constraints illustrates proficiency in maintaining data integrity and managing relational databases.</li>
+                <li>CRUD Operations: The updated CRUD operations in DBHelper reflect the ability to handle complex data interactions.</li>
+                <li>User Management: Implementing sign-in and profile management demonstrates skills in user authentication and personalization.</li>
+                <li>Notifications: Adding congratulatory notifications highlights the use of Android’s notification system to enhance user engagement.</li>
+            </ul>
+            <p><strong>Improvements included:</strong></p>
+            <ul>
+                <li><strong>BHelper.java:</strong> Added userId as a foreign key in the weightEntry table. Updated the onUpgrade method to handle adding the foreign key in existing databases. Updated the methods to work with userId for adding and retrieving
+                    weight entries.</li>
+                <li><strong>UserSessionManager.java:</strong> Added a new key KEY_USER_ID to store and retrieve the user's ID. Updated createUserSession and getUserId methods to handle the user ID.</li>
+                <li><strong>WeightEntry.java:</strong> Added a new field userId to represent the foreign key. Updated constructors to include userId.</li>
+            </ul>
+            <p><strong>Meeting Course Objectives:</strong> The enhancements met the objectives of improving database schema design and ensuring data integrity, which were key learning goals in Module One.</p>
+            <p><strong>Reflection on the Enhancement Process:</strong> Enhancing the WeightTracker project provided valuable insights into advanced database management and application development, contributing to a more robust and reliable software solution.
+                Challenges faced included ensuring foreign key support in SQLite and managing database upgrades without data loss.</p>
+            <br>
+            <br>
+            <h3>Travlrs Getaway Project</h3>
+            <p><strong>Artifact Description:</strong> The Travlrs Getaway project is a travel booking platform that allows users to search for destinations, read and write reviews, and book accommodations. It includes the implementation of Dijkstra's Algorithm
+                to optimize travel routes, created in 2024 as part of my computer science coursework.</p>
+            <p><strong>Justification for Inclusion in the ePortfolio:</strong> This project showcases my skills in algorithms and data structures, particularly through the implementation of Dijkstra's Algorithm, demonstrating my ability to solve complex
+                problems and apply theoretical concepts to practical applications.</p>
+            <p><strong>Specific Components Showcasing Skills and Abilities:</strong></p>
+            <ul>
+                <li>Dijkstra's Algorithm Implementation: Demonstrates my understanding of graph theory and my ability to implement efficient algorithms to solve real-world problems.</li>
+                <li>Data Structures: The project utilizes various data structures, such as priority queues and adjacency lists, to optimize the performance of the algorithm.</li>
+                <li>User Interface Design: Features a user-friendly interface, demonstrating my ability to design intuitive and accessible software.</li>
+                <li>Integration and Testing: The seamless integration of multiple features and thorough testing highlight my attention to detail and commitment to high-quality software development.</li>
+            </ul>
+            <p><strong>Improvements Made to the Artifact:</strong> The project was improved through implementing Dijkstra's Algorithm, enhancing the user interface for better user experience, and incorporating feedback to add new features and fix bugs.</p>
+            <p><strong>Reflection on the Enhancement Process:</strong> Working on the Travlrs Getaway project taught me how to balance theoretical knowledge with practical application, optimize performance for larger datasets, and design an intuitive user
+                interface, enhancing my problem-solving skills and adaptability.</p>
+            <br>
+            <br>
+            <h3>3D Project</h3>
+            <p><strong>Artifact Description:</strong> This artifact is a 3D project developed in 2023 using C++ and OpenGL. It features several objects: a desk, a laptop on the desk, a pen in front of the laptop, and a teacup with a saucer positioned to
+                the right of the laptop.</p>
+            <p><strong>Justification for Inclusion:</strong> This project is included in the ePortfolio to showcase my skills in 3D graphics programming using C++ and OpenGL. It demonstrates my ability to set up an OpenGL environment, handle user input,
+                and render complex 3D objects interactively, highlighting my proficiency in essential software development skills.</p>
+            <p><strong>Specific Components Showcasing Skills and Abilities in Software Development:</strong></p>
+            <ul>
+                <li>OpenGL Setup: The project involves configuring an OpenGL environment, including initializing graphics settings and managing the rendering context.</li>
+                <li>Handling Input: The code handles user inputs to control animations, such as opening the laptop with 'L', rolling the pen with 'K', and wobbling the teacup with 'J'.</li>
+                <li>Rendering Graphics: Utilizes C++ and OpenGL for rendering the 3D models and animations, demonstrating skills in graphics programming and real-time rendering.</li>
+            </ul>
+            <p><strong>Improvement of the Artifact:</strong> The project was enhanced by integrating interactive animations within the OpenGL environment, which required refining the OpenGL rendering code and input handling to ensure smooth and responsive
+                animations.
+            </p>
+            <p><strong>Reflection on Enhancing and Modifying the Artifact:</strong> Enhancing the project provided hands-on experience with OpenGL for rendering graphics and managing animations. The challenges included ensuring smooth animation transitions
+                and debugging issues with OpenGL context and input synchronization.</p>
+
+
+        </div>
+
+        <div class="column">
+            <h2>Enhanced Projects</h2>
+            <br>
+            <br>
+            <br>
+            <div class="project">
+                <img src="weight.png" alt="WeightTracker Enhanced">
+                <a href="#" target="_blank">Enhanced WeightTracker Project</a>
+                <p>Improved security features and optimized database queries for better performance.</p>
+                <a href="https://github.com/Brody-Robinson/MyWeightTracker-enhance" target="_blank" class="btn">View Project</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="project">
+                <img src="logo.png" alt="Travlrs Getaway Enhanced">
+                <a href="#" target="_blank">Enhanced Travlrs Getaway Project</a>
+                <p>Upgraded user interface and enhanced team collaboration features.</p>
+                <a href="https://github.com/Brody-Robinson/travlr-enhance" target="_blank" class="btn">View Project</a>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="project">
+                <img src="keys.png" alt="3D Project Enhanced">
+                <a href="#" target="_blank">Enhanced 3D Project</a>
+                <p>Optimized real-time performance for a smoother user experience.</p>
+                <a href="https://github.com/Brody-Robinson/3D-Objects-enhance" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Connect with Me</h2>
+        <a href="#" target="_blank" class="footer-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Brody-Robinson" target="_blank" class="footer-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
