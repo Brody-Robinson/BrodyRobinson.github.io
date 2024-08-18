@@ -60,6 +60,7 @@ header p {
 
 #content {
     display: flex;
+    /* Flexbox for large devices */
     justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
@@ -67,8 +68,58 @@ header p {
     gap: 20px;
 }
 
+
+/* Media query for large devices (desktops) */
+
+@media (min-width: 992px) {
+    #content {
+        display: flex;
+        /* Flexbox for large devices */
+        flex-direction: row;
+        /* Default flex direction */
+    }
+}
+
+
+/* Media query for medium devices (tablets) */
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #content {
+        display: flex;
+        /* Flexbox for tablets */
+        flex-direction: row;
+        /* Default flex direction */
+        flex-wrap: wrap;
+        /* Allow wrapping of items */
+    }
+    .column,
+    .narrative {
+        width: 90%;
+        /* Adjust width for medium devices */
+        margin-bottom: 20px;
+        /* Space between items */
+    }
+}
+
+
+/* Media query for small devices (mobiles) */
+
+@media (max-width: 767px) {
+    #content {
+        display: block;
+        /* Stack items vertically for small devices */
+    }
+    .column,
+    .narrative {
+        width: 100%;
+        /* Full width for each item */
+        margin-bottom: 20px;
+        /* Space between items */
+    }
+}
+
 .column {
-    width: 30%;
+    width: 90%;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -76,7 +127,7 @@ header p {
 }
 
 .narrative {
-    width: 40%;
+    width: 90%;
     background-color: #f9f9f9;
 }
 
